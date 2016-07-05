@@ -8,7 +8,7 @@ namespace TeduSho.Model
     {
         [Key]
         public int ID { get; set; }
-        //asa
+
         [Required]
         [MaxLength(50)]
         public string Name { get; set; }
@@ -30,5 +30,7 @@ namespace TeduSho.Model
 
         [MaxLength(50)]
         public bool? Status { get; set; }
+
+        public int? DisplayOder { get; set; }
     }
 }

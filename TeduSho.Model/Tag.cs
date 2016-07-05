@@ -16,10 +16,11 @@ namespace TeduSho.Model
         public int ID { get; set; }
 
         [Required]
-        [MaxLength(256)]
+        [MaxLength(50]
         public string Name { get; set; }
+        [Required]
+        [MaxLength(50)]
         public string Type { get; set; }
-        public virtual IEnumerable<ProductTag> ProductTag { get; set; }
-        public virtual IEnumerable<ProductTag> PostTag { get; set; }
+       
     }
 }

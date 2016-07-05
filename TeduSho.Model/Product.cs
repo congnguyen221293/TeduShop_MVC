@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Xml.Linq;
-using TeduSho.Model.Abstract;
 
 namespace TeduSho.Model
 {
@@ -13,9 +12,12 @@ namespace TeduSho.Model
         public int ID { get; set; }
 
         [Required]
+        [MaxLength(256)]
         public string Name { get; set; }
 
+        [Column(TypeName = "varchar")]
         [Required]
+        [MaxLength(256)]
         public string Alias { get; set; }
 
         [Required]
@@ -25,20 +27,20 @@ namespace TeduSho.Model
         public int DisplayOder { get; set; }
 
         [Required]
+        [MaxLength(256)]
         public string Image { get; set; }
 
         public XElement MoreImage { get; set; }
 
-        [Required]
         public decimal Pice { get; set; }
 
         public decimal? PromotionPice { get; set; }
         public int? Warranty { get; set; }
 
         [Required]
+        [MaxLength(500)]
         public string Description { get; set; }
 
-        [Required]
         public string Content { get; set; }
 
         public bool? HomeFlag { get; set; }
