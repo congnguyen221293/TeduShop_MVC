@@ -1,5 +1,6 @@
 ﻿namespace TeduSho.Data.Infrastructure
 {
+    //factoy
     public class DbFactory : Disponable, IDbFactory
     {
         private TeduShopDbContext DbContext;
