@@ -2,6 +2,7 @@
 {
     public class UnitOfWord : IUnitOfWord
     {
+        // dùng để commit 2 phương thức vào database
         private readonly IDbFactory dbFactory;
         private TeduShopDbContext dbContext;
 

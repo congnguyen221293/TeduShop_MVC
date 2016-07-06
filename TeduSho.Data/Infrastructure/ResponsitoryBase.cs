@@ -8,6 +8,7 @@ namespace TeduSho.Data.Infrastructure
 {
     public abstract class ResponsitoryBase<T> where T : class
     {
+        // triển khai toàn bộ phương thức trong IResponsitory
         #region Properties
 
         private TeduShopDbContext dataContext;

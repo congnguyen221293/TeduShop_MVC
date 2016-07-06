@@ -2,6 +2,7 @@
 
 namespace TeduSho.Data.Infrastructure
 {
+    // dùng để tắt đối tượng khi không dùng đến
     public class Disponable : IDisposable
     {
         protected bool isDisposed;
