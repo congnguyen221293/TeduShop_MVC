@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\Auditable.cs" />
+    <Compile Include="Abstract\IAuditable.cs" />
     <Compile Include="Footer.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MenuGroup.cs" />
