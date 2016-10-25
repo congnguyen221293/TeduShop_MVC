@@ -11,22 +11,25 @@ namespace TeduSho.Model
         public int ID { get; set; }
 
         [Required]
-        [MaxLength(256)]
+        [MaxLength(50)]
         public string Name { get; set; }
 
         [Required]
+        [MaxLength(256)]
         public string URL { get; set; }
 
         [Required]
-        public string DisplayOder { get; set; }
+        public int? DisplayOder { get; set; }
 
         [Required]
         public int GroupID { get; set; }
 
+        [MaxLength(10)]
         public string Targer { get; set; }
 
         [Required]
         public bool Status { get; set; }
+
         [ForeignKey("GroupID")]
         public virtual MenuGroup MenuGroups { get; set; }
     }

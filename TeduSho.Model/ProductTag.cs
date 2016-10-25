@@ -7,12 +7,12 @@ namespace TeduSho.Model
     public class ProductTag
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ProductID { get; set; }
-
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        
         [Key]
-        public int TagID { get; set; }
+        [MaxLength(50)]
+        [Column(TypeName ="varchar")]
+        public string TagID { get; set; }
 
         [ForeignKey("ProductID")]
         public virtual Product Products { get; set; }

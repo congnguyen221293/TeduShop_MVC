@@ -12,6 +12,8 @@ namespace TeduSho.Model
         public int ID { get; set; }
 
         public DateTime VisitedDate { get; set; }
+
+        [MaxLength(50)]
         public string IPAddress { get; set; }
     }
 }
