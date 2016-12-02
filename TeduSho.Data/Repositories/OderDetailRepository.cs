@@ -5,7 +5,7 @@ using TeduSho.Model;
 
 namespace TeduSho.Data.Repositories
 {
-    public interface IOderDetailRepository
+    public interface IOderDetailRepository: IResponsitory<OderDetail>
     {
         IEnumerable<OderDetail> GetbByAlias(string alias);
     }

@@ -3,7 +3,7 @@ using TeduSho.Model;
 
 namespace TeduSho.Data.Repositories
 {
-    public interface ISystemConfigRepository
+    public interface ISystemConfigRepository : IResponsitory<SystemConfig>
     {
 
     }

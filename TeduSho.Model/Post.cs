@@ -37,6 +37,8 @@ namespace TeduSho.Model
 
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { get; set; }
-        
+        public IEnumerable<PostTag> PostTags { get; set; }
+
+
     }
 }

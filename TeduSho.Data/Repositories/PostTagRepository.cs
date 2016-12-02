@@ -3,7 +3,7 @@ using TeduSho.Model;
 
 namespace TeduSho.Data.Repositories
 {
-    public interface IPostTagRepository
+    public interface IPostTagRepository : IResponsitory<PostTag>
     {
 
     }

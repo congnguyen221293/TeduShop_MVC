@@ -5,7 +5,7 @@ using TeduSho.Model;
 
 namespace TeduSho.Data.Repositories
 {
-    public interface IOderRepository
+    public interface IOderRepository : IResponsitory<Oder>
     {
         IEnumerable<Oder> GetById(int id);
     }

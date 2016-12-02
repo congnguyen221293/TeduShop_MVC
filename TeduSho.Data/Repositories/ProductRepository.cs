@@ -5,7 +5,8 @@ using TeduSho.Model;
 
 namespace TeduSho.Data.Repositories
 {
-    public interface IProductRepository{
+    public interface IProductRepository : IResponsitory<Product>
+    {
     IEnumerable<Product> GetByAlias(string alias);
     }
     public class ProductRepository : ResponsitoryBase<Product>, IProductRepository

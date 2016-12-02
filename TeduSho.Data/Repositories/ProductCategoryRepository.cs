@@ -8,7 +8,8 @@ using TeduSho.Model;
 
 namespace TeduSho.Data.Repositories
 {
-    public interface IProductCategoryRepository {
+    public interface IProductCategoryRepository : IResponsitory<ProductCategory>
+    {
         IEnumerable<ProductCategory> GetbyAlias(string alias);
 
     }

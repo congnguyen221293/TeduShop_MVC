@@ -8,7 +8,7 @@ using TeduSho.Model;
 
 namespace TeduSho.Data.Repositories
 {
-    public interface IFooterRepository
+    public interface IFooterRepository : IResponsitory<Footer>
     {
         IEnumerable<Footer> GetById(string id);
 

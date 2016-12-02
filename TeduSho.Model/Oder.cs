@@ -29,6 +29,7 @@ namespace TeduSho.Model
 
         public DateTime CreatedDate { get; set; }
         public string CreatedBy { get; set; }
+       
 
         [MaxLength(256)]
         public string PaymentMethod { get; set; }
